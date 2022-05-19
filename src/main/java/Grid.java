@@ -43,23 +43,9 @@ public class Grid {
     //Methods
 
 
-   /* public Tiles[][] getNewGrid() {
-
-
-        this.newGrid = new Tiles[this.numberOfRows][this.numberOfColumns];
-
-        for(int i = 0; i <= this.numberOfMines - 1; i++){
-
-            int random_rows = (int)Math.floor(Math.random()*(this.numberOfRows-0)+0);
-            int random_column = (int)Math.floor(Math.random()*(this.numberOfRows-0)+0);
-
-            this.newGrid[random_rows][random_column]= true;
-        }
-
-        return newGrid;
-    }    */
-
     public void startGame(){
+
+
 
         System.out.print("    ");
 
@@ -92,6 +78,22 @@ public class Grid {
             //
 
         }
+
+        System.out.println("Enter the coordinates (x,y) : ");
+
+        System.out.println("X : ");
+        int xCoordinate = userInput.nextInt();
+
+        System.out.println("Y : ");
+        int yCoordinate = userInput.nextInt();
+
+
+
+
+
+
+
+
 
 
 
