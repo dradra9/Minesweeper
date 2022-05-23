@@ -3,6 +3,7 @@ public class Tiles {
     boolean haveMine = false;
     int numberOfMinesCloseBy = 0;
     boolean flag = false;
+    boolean revealTile = false;
 
 // Constructor
 
@@ -11,13 +12,18 @@ public class Tiles {
         this.haveMine = haveMine;
         this.numberOfMinesCloseBy = numberOfMinesCloseBy;
         this.flag = flag;
+        this.revealTile = false;
     }
 
     public void setBomb(){
         this.haveMine = true;
     }
 
-// Methods
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
+
+    // Methods
 
 
 

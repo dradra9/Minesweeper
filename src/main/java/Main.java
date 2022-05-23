@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class Main {
 
@@ -10,10 +10,17 @@ public class Main {
 
 
        // Tiles tiles = new Tiles(false,0,false);
-        Grid newGrid = new Grid(10,10);
-
-
+        System.out.println("How many rows and columns?");
+        System.out.println("Rows :");
+        Scanner myScanner = new Scanner(System.in);
+        int rows = Integer.valueOf(myScanner.nextLine());
+        System.out.println("Columns :");
+        int columns = Integer.valueOf(myScanner.nextLine());
+        Grid newGrid = new Grid(rows,columns);
+        newGrid.assignNumberOfMines();
+        newGrid.printGrid();
         newGrid.startGame();
+
 
 
     }
